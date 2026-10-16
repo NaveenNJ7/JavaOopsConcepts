@@ -1,0 +1,25 @@
+package ExceptionHandling;
+
+public class SleepException {
+
+	
+	public static void main(String[] args) {
+		
+		int[] a = {10,20,30,40,50};
+		
+		for(int i=0; i<a.length; i++)
+		{
+			
+		    System.out.println(a[i]);
+			try
+			{
+			Thread.sleep(3000);
+			}
+			
+			catch(InterruptedException e)
+			{
+				e.printStackTrace();
+			}
+		}
+	}
+}
